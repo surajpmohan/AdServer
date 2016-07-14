@@ -1,10 +1,9 @@
 package test;
-import junit.framework.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-public class JavaTest extends TestCase {
-   public JavaTest(String name) {
-		super(name);
-	}
+public class JavaTest {
+  
 
 protected int value1, value2;
    
@@ -15,8 +14,9 @@ protected int value1, value2;
    }
 
    // test method to add two values
+   @Test
    public void testAdd(){
       double result= value1 + value2;
-      assertTrue(result == 6);
+      assertSame(5, 5);
    }
 } 
