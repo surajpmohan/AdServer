@@ -5,7 +5,7 @@ Running the application:
 
 Software required:
 
-1. JDK 1.7
+1. JDK 1.8
 2. Toomcat 7.0
 
 Get the /AdServer/target/AdServer.war
