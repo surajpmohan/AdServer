@@ -1,6 +1,8 @@
 # AdServer
 AdServer Application configuration.
+
 Running the application:
+
 Software required:
 
 1. JDK 1.7
