@@ -23,16 +23,16 @@ Set the header content-type=application/json for all the requests.
 Test POST
 
 URL: http://localhost:8080/AdServer/rest/ad
+(The application is deployed on heroku cloud with public URL: https://spm-adserver.herokuapp.com/rest/ad)
+
 Sample Requst: 
 {
  "partner_id": "123_Neo",
  "duration":100,
  "ad_content": "This is my first ad"
 }
-
 Test GET by partner id
 http://localhost:8080/AdServer/rest/ad/123_Neo
-
 
 Test GET All
 http://localhost:8080/AdServer/rest/ad
@@ -51,9 +51,6 @@ Project: AdServer
 (https://github.com/surajpmohan/AdServer/tree/master/AdServer)
 
 2. Import into eclipse
-
 3. Run the maven task install
-
 4. The AdService.war will be generated inside AdServer\target
-
 5. Deploy the WAR in Tomcat
