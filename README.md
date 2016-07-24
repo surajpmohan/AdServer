@@ -24,6 +24,7 @@ Test POST
 
 URL: http://localhost:8080/AdServer/rest/ad
 (The application is deployed on heroku cloud with public URL: https://spm-adserver.herokuapp.com/rest/ad)
+(The application is deployed on pivotal cloud with public URL: http://spmadserver.cfapps.io/rest/ad)
 
 Sample Requst: 
 {
