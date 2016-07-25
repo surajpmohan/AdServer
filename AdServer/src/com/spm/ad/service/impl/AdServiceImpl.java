@@ -23,6 +23,9 @@ public class AdServiceImpl implements AdService {
 
 	@Override
 	public AdServiceBean insert(AdServiceBean adBean) {
+		if(adBean.getPartner_id()==null || "".equals(adBean.getPartner_id())){
+			throw new AdException("partner_id is not present in the request.");
+		}
 		List<ADBean> dbBeans = adRepository.getActiveAD(adBean.getPartner_id());
 		int size = dbBeans.size();
 		if(size<=0){

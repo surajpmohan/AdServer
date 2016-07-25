@@ -40,4 +40,9 @@ public class AdServiceBean {
 	public void setAd_content(String ad_content) {
 		this.ad_content = ad_content;
 	}
+	@Override
+	public String toString() {
+		return "AdServiceBean [partner_id=" + partner_id + ", duration=" + duration + ", ad_content=" + ad_content
+				+ "]";
+	}
 }
