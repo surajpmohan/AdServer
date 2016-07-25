@@ -12,6 +12,7 @@ Get the /AdServer/target/AdServer.war
 (https://github.com/surajpmohan/AdServer/blob/master/AdServer/target/AdServer.war)
 Deploy on Tomcat 7.0
 
+The application is running on the pivotal cloud with URL: http://spmadserver.cfapps.io/rest/ad
 
 Testing:
 
@@ -23,10 +24,11 @@ Set the header content-type=application/json for all the requests.
 Test POST
 
 URL: http://localhost:8080/AdServer/rest/ad
+Cloud URL: http://spmadserver.cfapps.io/rest/ad
 
-(The application is deployed on heroku cloud with public URL: https://spm-adserver.herokuapp.com/rest/ad)
-
-(Also the application is deployed on pivotal cloud with public URL: http://spmadserver.cfapps.io/rest/ad)
+(The application is deployed on 
+heroku cloud with public URL: https://spm-adserver.herokuapp.com/rest/ad and 
+pivotal cloud with public URL: http://spmadserver.cfapps.io/rest/ad )
 
 Sample Requst: 
 {
@@ -36,9 +38,11 @@ Sample Requst:
 }
 Test GET by partner id
 http://localhost:8080/AdServer/rest/ad/123_Neo
+Cloud URL: http://spmadserver.cfapps.io/rest/ad/123_Neo
 
 Test GET All
 http://localhost:8080/AdServer/rest/ad
+Cloud URL: http://spmadserver.cfapps.io/rest/ad
 
 Set up the code:
 
