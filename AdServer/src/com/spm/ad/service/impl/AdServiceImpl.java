@@ -30,7 +30,7 @@ public class AdServiceImpl implements AdService {
 			adRepository.insert(adDbBean);
 		}
 		else{
-			throw new AdException("An active ad for the partner is present already.");
+			throw new AdException("An active ad for the partner is already present.");
 		}
 		return adBean;
 	}

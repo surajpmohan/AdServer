@@ -40,7 +40,7 @@ public class AdControllerImpl implements AdController {
 	public @ResponseBody Map<String,String> post(@RequestBody AdServiceBean adBean){
 		adService.insert(adBean);
 		Map<String, String> map = new HashMap<>();
-		map.put("Message", "The ad is saved successfully.");
+		map.put("Message", "The ad was saved successfully.");
 		return map;
 	}
 	@ExceptionHandler(AdException.class)
@@ -60,8 +60,5 @@ public class AdControllerImpl implements AdController {
 	public void setAdService(AdService adService) {
 		this.adService = adService;
 	}
-
-
-	
 	
 }
