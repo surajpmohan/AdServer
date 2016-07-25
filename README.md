@@ -24,7 +24,9 @@ Set the header content-type=application/json for all the requests.
 Test POST
 
 URL: http://localhost:8080/AdServer/rest/ad
+
 Cloud URL: http://spmadserver.cfapps.io/rest/ad
+
 
 (The application is deployed on 
 heroku cloud with public URL: https://spm-adserver.herokuapp.com/rest/ad and 
@@ -36,12 +38,15 @@ Sample Requst:
  "duration":100,
  "ad_content": "This is my first ad"
 }
+
 Test GET by partner id
 http://localhost:8080/AdServer/rest/ad/123_Neo
+
 Cloud URL: http://spmadserver.cfapps.io/rest/ad/123_Neo
 
 Test GET All
 http://localhost:8080/AdServer/rest/ad
+
 Cloud URL: http://spmadserver.cfapps.io/rest/ad
 
 Set up the code:
