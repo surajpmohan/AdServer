@@ -25,11 +25,13 @@ import com.spm.ad.service.AdService;
 @RequestMapping("/ad")
 public class AdControllerImpl implements AdController {
 	@RequestMapping(method=RequestMethod.GET, value="/{partnerId}",produces="application/json")
+	@Override
 	public @ResponseBody AdServiceBean get(@PathVariable String partnerId){
 		AdServiceBean adServiceBean = adService.getActiveAd(partnerId);
 		return adServiceBean;
 	}
 	@RequestMapping(method=RequestMethod.GET, produces="application/json")
+	@Override
 	public @ResponseBody List<AdServiceBean> get(){
 		List<AdServiceBean> beans = adService.getAllActiveAd();
 		return beans;
@@ -37,6 +39,7 @@ public class AdControllerImpl implements AdController {
 	
 	@RequestMapping(method=RequestMethod.POST,consumes="application/json", produces="application/json")
 	@ResponseStatus(value = HttpStatus.OK)
+	@Override
 	public @ResponseBody Map<String,String> post(@RequestBody AdServiceBean adBean){
 		adService.insert(adBean);
 		Map<String, String> map = new HashMap<>();
